@@ -21,6 +21,8 @@ function doubleChar(str) {
   //Better solution 
 //   const doubleChar = (str) => str.split("").map(c => c + c).join("");
 
+// const doubleChar = str => str.split('').map(el => el + el).join('')
+
 
 
 //WEIRD SOLUTION (look up)
