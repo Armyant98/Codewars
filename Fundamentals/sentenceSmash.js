@@ -20,5 +20,11 @@ function smash (words) {
     return finalSentence
   };
 
+// BETTER SOLUTIONS 
 
+// // Smash Words
+// const smash = words => words.join(' ');
 
+// smash = function (words) {
+//     return words.join(" ");
+//   };
