@@ -21,3 +21,7 @@ function countSheeps(arrayOfSheep) {
   }
 
 
+//   better solution that uses the boolean object 
+function countSheeps(arrayOfSheeps) {
+    return arrayOfSheeps.filter(Boolean).length;
+  }
