@@ -30,3 +30,10 @@ function enough(cap, on, wait) {
   // if the number of ppl left after is above 0 then we return 0 so that way we know that there is still room left on the bus and therefore the leftover ppl is 0 
   // in any other situation we will return the absolute value of the negative result that will come from the subtraction as that will be the only way to show if ppl waiting 
   //over exceeds the ppl it can hold but since a positive is desired such as "6 ppl cant fit" we have to get the absolute value
+
+//   function enough(cap, on, wait) {
+//     return Math.max(wait + on - cap, 0);
+//   }
+
+//Other solution returns the max between the difference of wait + on - cap vs the number 0 
+//addition allows it so that there never is the situation of negative that needs to be switched with Math.abs the only negatives will be filtered out by Math.max to return 0 anyway
