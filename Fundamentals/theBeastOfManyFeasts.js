@@ -7,13 +7,17 @@
 // They will not contain numerals.
 
 function feast(beast, dish) {
-  let beastLength = beast.length-1
-  let dishLength = dish.length-1
+  let beastLength = beast.length - 1
+  let dishLength = dish.length - 1
   
-  if (beast[beastLength] === dish[dishLength]){
+  if (beast[beastLength] === dish[dishLength] && beast[0] === dish[0]){
     return true
   }else{
     return false
   }
 }
 
+
+// function feast(beast, dish) {
+// 	return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+// }
