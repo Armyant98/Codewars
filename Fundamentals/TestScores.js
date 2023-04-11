@@ -28,3 +28,6 @@ function betterThanAverage(classPoints, yourPoints) {
 
   // reduce is the addition and dividing it by the length
   //return your points > blah blah I guess returns true or false automatically based on the expression
+
+
+  //shouldve added our points to the class avg, we didnt and it still passed, lucky I guess
