@@ -18,4 +18,13 @@ function betterThanAverage(classPoints, yourPoints) {
     let average = sum / classPoints.length
     return yourPoints > average ? true : false
   }
-  
+
+
+
+  // better solution probably 
+  function betterThanAverage(classPoints, yourPoints) {
+    return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+  }
+
+  // reduce is the addition and dividing it by the length
+  //return your points > blah blah I guess returns true or false automatically based on the expression
