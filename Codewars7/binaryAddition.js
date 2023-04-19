@@ -13,3 +13,4 @@ addBinary = (a,b) => (a+b).toString(2)
 
 
 //to string has a property known as radix, which allows the base changes for num to string. Converts this num to a string at the base of 2 aka binary
+//make sure that parenthesis before to string as it will not evaluate the a+b it will add a to the b.toString(2)
