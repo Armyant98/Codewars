@@ -8,3 +8,22 @@
 function filter_list(l) {
     return l.filter(e => typeof e === 'number')
   }
+
+
+  let alphabet = 'abcdefghijklmnopqrstuvwzyz'
+  let legend = []
+  for(let i=0; i<4; i++){
+    if(i<2){
+      legend.push(alphabet.split(''))
+    }else {
+      let arr = alphabet.split('')
+      arr = arr.map(letter => letter.toUpperCase())
+      legend.push(arr)
+    }
+    
+  }
+  
+  legend = legend.flat(legend)
+  message = message.arr
+                  
+  console.log(legend)
