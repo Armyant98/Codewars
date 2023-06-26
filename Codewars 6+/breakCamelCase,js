@@ -1,0 +1,35 @@
+// Complete the solution so that the function will break up camel casing, using a space between words.
+
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+
+// complete the function
+function solution(string) {
+  let words = []
+    for(let i = 0; i < string.length; i++){
+      if(string[i] === string[i].toUpperCase()){
+        words.push(' ')
+        words.push(string[i])
+        
+      }
+      else{
+        words.push(string[i])
+      }
+  }
+  
+  return words.join('')
+}
+
+
+
+function solution(string) {
+    string = string.split('').map(function (el) {
+      if (el === el.toUpperCase()) {
+        el = ' ' + el
+      }
+      return el
+    })
+    return string.join('')
+  }
