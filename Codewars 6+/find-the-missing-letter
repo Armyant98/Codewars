@@ -1,0 +1,45 @@
+function findMissingLetter(arr){
+  //Parameters
+  
+      //You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be 
+      //at least 2.
+      //will always be in the same case
+  
+  //Return 
+  
+      //missing letter from the squence 
+  
+  //Examples
+  
+      //   ['a','b','c','d','f'] -> 'e'
+      //  ['O','Q','R','S'] -> 'P'
+
+  //Psuedocode
+  
+  
+  //variable with alphabet to reference 
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const alphabetCaps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  let correctSegment 
+  
+  //find starting and end point using array
+  if(arr[0] === arr[0].toLowerCase()){ //differentiate for upper or lowercase
+     correctSegment = alphabet.slice(alphabet.indexOf(arr[0]), alphabet.indexOf(arr[arr.length - 1])+ 1)
+  }else{
+    correctSegment = alphabetCaps.slice(alphabetCaps.indexOf(arr[0]), alphabetCaps.indexOf(arr[arr.length - 1])+ 1)
+  }
+  
+  
+  //compare both segments
+  let missingLetter = ''
+  
+  correctSegment.split('').forEach(letter => {
+    if(arr.indexOf(letter) === -1){
+      missingLetter = letter
+    }
+  })
+  
+  
+  return missingLetter
+  
+}
